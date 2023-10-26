@@ -160,3 +160,8 @@ a {
     font-weight: 500;
     text-decoration: none;
 }
+
+.all-categories-col {
+    display: inline-flex;
+    flex-direction: column;
+}
