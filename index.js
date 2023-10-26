@@ -86,10 +86,15 @@ function addEntry(item, category){
 }
 
 function generateEntryHTML(title, url, id) {
+    var httpsURL = ''
+
+    if(!url.startsWith('http')){
+        httpsURL = 'https://' + url
+    }
 
     const b_text = `
     <div class="b-text">
-        <a href="${url}" target="_blank">${title}</a>
+        <a href="${httpsURL}" target="_blank">${title}</a>
     </div>`;
 
     const b_details = `
